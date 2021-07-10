@@ -1,0 +1,23 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "content.js" ],
+      "matches": [ "https://tests.mettl.com/*", "https://tests.mettl.pro/*", "https://tests.mettl.xyz/*", "https://tests.mettl.info/*", "https://chat.mettl.info/*", "https://mpaas-api.mettl.com/*", "https://mpaas-api.mettl.info/*", "https://mpaas-api.mettl.xyz/*", "https://mpaas-api.mettl.pro/*", "https://chat.mettl.com/*", "https://mpaas-api.mercermettl.com/*", "https://tests.mercermettl.com/*", "https://tests.mercermettl.eu/*", "https://mpaas-api.mercermettl.eu/*" ]
+   } ],
+   "description": "This chrome extension enables screen sharing support on https://tests.mettl.com pages for the duration of test.",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAydcvJMRixcx7rj9adLZ0xuQHRQOKTGnmC7nKo3aTw7Kjz8Lr6Y8xrcCq3jjA6LvA1rZ357SJYp0GODgwjh70oWmYVm+PsHY0MViFxVx7PGHIfkU++K9MsJWthqz0c9LcIGpomGTkOhCDyUxzgivh5Y0mNBl8bLiHlcssDBoxuMkxB+bwZyX35QFKfYEZTQF3/cCKdZiGfbIu1fAlMBbkwWA+VHei5kJBdPhEhA9GT3hKknfOsA1mO+i8kApcqfjf1AA9ac34E1OoaXD4G+2naJMhus+d2pxR4FaAS710aK5rnn7kTnVL7FVHt2K7DxgrYTlFs0wIDqAmSMnZ+mr+fwIDAQAB",
+   "manifest_version": 2,
+   "name": "Mettl Tests : Enable Screen Sharing",
+   "permissions": [ "desktopCapture", "tabs", "system.display" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.8",
+   "web_accessible_resources": [ "icon16.png" ]
+}
